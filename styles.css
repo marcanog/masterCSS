@@ -41,4 +41,27 @@ footer{
 #formulario form{
     margin: 15px;
     border: 2px dashed #ffe9e3;
+    padding: 20px;
+}
+#formulario form *{
+    display: block;
+}
+input[type="text"]{
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+input[type="submit"]{
+    background: #a393eb;
+    color: #FFFFFF;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid #a393eb;
+    cursor: pointer;
+}
+
+/* Selector hijo */
+#menu > li > a{
+    color: #77529e;
 }
