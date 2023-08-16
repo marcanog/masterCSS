@@ -2,9 +2,30 @@
 *{
     font-family: Verdana, Tahoma, Monserrat, Roboto, sans-serif;
 }
+
 body{
     background: #FFFFFF;
 }
 h1{
-    color: #2f2f2f;
+    color: #7c73e6;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #6643b5;
+}
+
+footer{
+    background: #000000;
+    color: #FFFFFF;
+}
+/*Selector de id*/
+#descripcion{
+    padding: 15px;
+}
+
+#titulo{
+    background: #ffe9e3;
+    border: 2px dashed #FFFFFF;
 }
