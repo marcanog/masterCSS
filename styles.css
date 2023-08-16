@@ -29,3 +29,16 @@ footer{
     background: #ffe9e3;
     border: 2px dashed #FFFFFF;
 }
+
+/* Selector de Clase */
+.parrafo{
+    font-style: italic;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Selector de attributo */
+#formulario form{
+    margin: 15px;
+    border: 2px dashed #ffe9e3;
+}
