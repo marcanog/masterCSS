@@ -1,18 +1,36 @@
 /*Selector universal*/
+@font-face{
+    font-family: Relaway;
+    src: url('fonts/Relaway');
+}
+@font-face{
+    font-family: Poppins;
+    src: url('fonts/Poppins');
+}
+@font-face{
+    font-famliy: Lato;
+    src: url('fonts/Lato');
+}
 *{
-    font-family: Verdana, Tahoma, Monserrat, Roboto, sans-serif;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
 }
 
 body{
-    background: #fafafa; 
+    background: #fafafa;
+    background-image: url('backgrounds/bg1.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
 }
 h1, h2, h3{
     color: #7c73e6;
     padding: 10px;
-    font-family: Monserrat;
+    font-family: Lato;
 }
 p{
-    font-family: Roboto;
+    font-family: Poppins;
+    text-indent: 15px;
 }
 
 a{
@@ -36,9 +54,11 @@ footer{
 
 /* Selector de Clase */
 .parrafo{
-    font-style: italic;
+    font-style: normal;
     text-align: justify;
     padding: 10px;
+    word-spacing: 5px; /*Espaciado entre palabras*/
+    line-height: 30px; /* Altura entre lineas*/
 }
 
 /* Selector de attributo */
@@ -80,3 +100,8 @@ input[type="submit"]{
 h1{
     background: #d9f2ff !important;
 }Cuanto mas especifico es el selector y el important mayor prioriddad */
+
+#caja1{
+    width: 250px;
+    background-color: #ffe9e3;
+}
