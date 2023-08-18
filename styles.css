@@ -101,7 +101,25 @@ h1{
     background: #d9f2ff !important;
 }Cuanto mas especifico es el selector y el important mayor prioriddad */
 
-#caja1{
+/*Posicionamiento de cajas*/
+#caja{
+   /* width: 250px;
+    background-color: #ffe9e3;*/
+    max-width: 1200px;
+    border: 1px solid black;
+}
+.caja{
+    display: block;
     width: 250px;
-    background-color: #ffe9e3;
+    height: 250px;
+    background-color: lightblue;
+    border: 10px solid red;
+    margin: 15px 24px 10px 40px;
+    padding: 20px;
+    padding-bottom: 34px;
+    float: left;
+}
+.clearfix{
+    float: none;
+    clear: both;
 }
