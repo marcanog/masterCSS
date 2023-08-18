@@ -67,20 +67,31 @@ body{
     height: 250px;
     float: left;
     border: 1px solid #a5bdfd;
+    background: #c3bef0;
     margin: 40px;
+    line-height: 250px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px #241066;
+    border-radius: 5px;
+}
+#contenido h2{
+    text-align: center;
 }
 #contenido > h2 {
     text-align: center;
     border-bottom: 1px solid #6643b5;
     padding: 20px;
     color: #430f58;
+    text-shadow: 0 0 2px #6643b5;
 }
 #lateral{
     width: 25%;
+    height: 800px;
     float: left;
     margin: 0 20px;
     border: 1px dashed #a393eb;
     min-height: calc(20% - 100%);
+    overflow-y: scroll;
 }
 #lateral > #caja > h2{
     text-align: center;
@@ -98,4 +109,22 @@ footer{
 }
 footer a{
     color: #430f58;
+}
+.iconos{
+    position: fixed;
+    height: 345px;
+    width: 100px;
+    top: 30%;
+    left: 0;
+    background-color: #a393eb;
+    color: #fafafa;
+    border-radius: 0 10px 10px 0;
+}
+.iconos .rrss{
+    margin: 20px;
+}
+.iconos .rrss > a > img {
+    width: 54px;
+    padding: 10px 0;
+    color: #fafafa;
 }

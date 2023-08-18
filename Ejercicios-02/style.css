@@ -1,0 +1,39 @@
+*{
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+}
+body{
+    background-color: #fafafa;
+}
+ul li:first-child{
+    color: #7c73e6;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul li:nth-child(2){
+    color: #430f58;
+    font-size: 30px;
+    font-weight: lighter;
+}
+ul li:last-child{
+    color: #241066;
+    font-size: 40px;
+    font-weight: normal;
+}
+footer a:link{
+    color: #241066;
+}
+
+footer a:visited{
+    color: #7c73e6;
+}
+
+footer a:hover{
+    color: #a5bdfd;
+}
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+input[type="text"]:focus{
+    border: 2px dashed #dc2f2f;
+}
