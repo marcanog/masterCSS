@@ -1,5 +1,5 @@
 /* Ejercicio completo con HTML y CSS
-1. Crear una documento HTML y vincularlo con un css
+(Listo) 1. Crear una documento HTML y vincularlo con un css
 2. Crear una estructura HTML que cuente con un contenedor general, cabecera, menú, barra lateral,
 sección de contenido principal, elementos dentro del contenedor principal, footer
 3. Todo el contenido debe estar dentro del contenedor princiapl y su ancho será de 1200px y estar centrado;
@@ -9,3 +9,9 @@ sección de contenido principal, elementos dentro del contenedor principal, foot
 8. la barra lateral debe tener un ancho del 30%.
 9. El footer deber tener un ancho del 100% del div que lo contiene y estar abajo del todo.
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
