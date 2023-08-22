@@ -1,0 +1,50 @@
+#boton{
+    display: block;
+    padding: 20px;
+    background-color: #6643b5;
+    color: #FFFFFF;
+    width: 200px;
+    text-align: center;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #241066;
+    transition: all 500ms;
+}
+#boton:hover{
+    border-radius: 10px;
+    border: 2px solid #7c73e6;
+    background-color: #a5bdfd;
+}
+#caja{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: #5dacbd;
+    color: #241066;
+    border: 5px solid #430f58;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    animation-name: moveto;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes moveto {
+    0%{
+        margin-left: 0;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        background-color: #241066;
+        color: #fafafa;
+        border-radius: 999px;
+         }
+    100%{
+        margin-left: 0;
+        transform: rotate(0deg);
+    }
+}
