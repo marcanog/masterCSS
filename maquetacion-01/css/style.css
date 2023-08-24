@@ -10,6 +10,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "fajala";
+url("fonts/FjallaOne-Regular.ttf") format("truetype"), font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Estilos */
 * {
     padding: 0;
@@ -41,6 +58,15 @@ a:hover {
     color: #0C73F2 !important;
 }
 
+.orange {
+    color: #E7B52A !important;
+}
+
+.icon{
+    font-family: icons, sans-serif;
+    float: left;
+    margin-right: 5px;
+}
 /* Formularios*/
 input[type="text"],
 input[type="email"],
@@ -217,7 +243,6 @@ button:active {
 }
 
 #aside, #frase {
-    clear: both;
     width: 220px;
     background-color: #FFFFFF;
     border: 1px solid #C1C1C1;
@@ -228,6 +253,7 @@ button:active {
 }
 
 #frase {
+    /*clear: both;*/
     width: 200px;
     padding: 10px;
     font-size: 15px;
@@ -288,4 +314,54 @@ button:active {
 #aside label {
     margin: 0 auto;
     text-align: center;
+}
+
+/* Secciones */
+#sections {
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+    width: 75%;
+    float: right;
+    margin-right: 20px;
+}
+
+#sections .titulo {
+    font-family: fajala, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#sections section {
+    margin-top: 40px;
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 4px #C9C9C9;
+    color: #333333;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+#sections .article {
+    margin: 20px 10px;
+}
+
+#sections .date {
+    color: #808080;
+    font-size: 12px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo {
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .stickerTwo {
+    margin-left: 860px;
 }
