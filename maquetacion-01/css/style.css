@@ -19,7 +19,7 @@ url("fonts/FjallaOne-Regular.ttf") format("truetype"), font-weight: normal;
 @font-face {
     font-family: "icons";
     src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
-    url("fonts/websymbols-regular-webfont.eot");
+url("fonts/websymbols-regular-webfont.eot");
     src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("fonts/websymbols-regular-webfont.woff") format("woff"),
     url("fonts/websymbols-regular-webfont.ttf") format("truetype");
@@ -62,11 +62,12 @@ a:hover {
     color: #E7B52A !important;
 }
 
-.icon{
+.icon {
     font-family: icons, sans-serif;
     float: left;
     margin-right: 5px;
 }
+
 /* Formularios*/
 input[type="text"],
 input[type="email"],
@@ -240,6 +241,7 @@ button:active {
     width: 1250px;
     min-height: 1100px;
     margin: 0 auto;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
 }
 
 #aside, #frase {
@@ -364,4 +366,28 @@ button:active {
 
 #sections .stickerTwo {
     margin-left: 860px;
+}
+
+#history{
+    float: right;
+    margin-top:20px;
+    margin-right: 20px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* pie de página*/
+#footer{
+    width: 100%;
+    margin: 40px auto 0px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333333;
+    color: #fafafa;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 0 2px gray;
 }
