@@ -382,7 +382,7 @@ button:active {
 /* pie de página*/
 #footer{
     width: 100%;
-    margin: 40px auto 0px;
+    margin: 40px auto 0;
     text-align: center;
     padding: 10px 0;
     background-color: #333333;
