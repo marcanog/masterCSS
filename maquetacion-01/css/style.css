@@ -20,6 +20,77 @@ body {
     background-image: url("../images/paven.png");
 }
 
+a {
+    color: #529125;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #529125;
+}
+
+a:hover {
+    color: #285616;
+}
+
+.red {
+    color: #9B2422 !important;
+}
+
+.blue {
+    color: #0C73F2 !important;
+}
+
+/* Formularios*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 0 2px #c1c1c1 inset;
+    background-color: #FFFFFF;
+    padding: 2px 1px;
+    color: #c1c1c1;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border: 1px solid #71B053;
+    color: #000000;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #8bd26c;
+    width: 60px;
+    padding: 3px;
+    color: #FFFFFF;
+    background-color: #71B053;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    box-shadow: 0 0 2px #c1c1c1;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active {
+    box-shadow: 0 0 2px #c1c1c1 inset;
+    text-shadow: 0 0 1px #CCCCCC;
+}
+
 /* cabecera */
 #header {
     min-width: 1024px;
@@ -48,7 +119,7 @@ body {
 #header h1 {
     text-align: center;
     font-size: 40px;
-    font-family: nevis,sans-serif;
+    font-family: nevis, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-top: 10px;
@@ -56,10 +127,165 @@ body {
     transition: all 300ms;
 }
 
-#header h1:hover{
+#header h1:hover {
     text-shadow: 0 2px 1px #333333, 0 0 4px #71B053;
 }
 
 #header h1 a {
     color: #71B053;
+}
+
+/* barra de navegación */
+#nav {
+    width: 100%;
+    height: 40px;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+    font-size: 15px;
+    box-shadow: 0 0 2px #C1C1C1;
+}
+
+#nav ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+#nav > ul > li {
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid #C1C1C1;
+    transition: all 300ms;
+}
+
+#nav > ul > li a {
+    display: block;
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#nav > ul > li a:first-child {
+    border-left: 1px solid #C1C1C1;
+}
+
+#nav > ul > li:hover {
+    background-color: #71B053;
+    box-shadow: 0 0 4px green inset;
+}
+
+#nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    color: #FFFFFF;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0 2px 2px #C1C1C1;
+    z-index: 1;
+}
+
+#nav > ul > li:hover > ul {
+    display: block;
+}
+
+#nav > ul > li:hover > ul > li {
+    background-color: #fafafa;
+    border-bottom: 1px solid #C1C1C1;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    transition: all 300ms;
+}
+
+#nav > ul > li:hover > ul > li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+#nav > ul > li:hover > ul > li:hover {
+    box-shadow: 0 0 2px #C1C1C1 inset;
+    background-color: #efefef;
+}
+
+/* Contenido */
+#content {
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0 auto;
+}
+
+#aside, #frase {
+    clear: both;
+    width: 220px;
+    background-color: #FFFFFF;
+    border: 1px solid #C1C1C1;
+    float: left;
+    margin: 30px;
+    box-shadow: 0 2px 2px #C1C1C1;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+}
+
+#frase {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+}
+
+#aside li {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+#aside .widget {
+    display: block;
+    width: 200px;
+    margin: 5px auto;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-bottom: 1px dashed #333333;
+}
+
+#aside .widget:last-child {
+    margin-bottom: 20px;
+}
+
+#aside h3 {
+    display: block;
+    width: 100%;
+    color: #333333;
+    text-align: center;
+    padding: 2px 0;
+    margin-bottom: 15px;
+    background-color: #f2f3f2;
+    border: 1px solid #c1c1c1;
+    border-left: none;
+    border-right: none;
+}
+
+/* barra lateral formularios */
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a {
+    display: block;
+    width: 95%;
+    margin: 2px auto;
+}
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button {
+    margin: 10px auto;
+}
+
+#aside input,
+#aside label {
+    margin: 0 auto;
+    text-align: center;
 }
