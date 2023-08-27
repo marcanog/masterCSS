@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#container {
+    width: 70%;
+    background-color: #7c73e6;
+    margin: 40px auto;
+    font-family: Lato, Poppins, Relaway, Monserrat, Roboto, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #5dacbd;
+    color: #333333;
+    line-height: 150px;
+    text-align: center;
+}
+
+aside {
+    width: 25%;
+    min-height: 700px;
+    float: left;
+    background-color: #a393eb;
+    text-align: center;
+    line-height: 700px;
+}
+
+#articles {
+    width: 75%;
+    min-height: 700px;
+    background-color: #71B053;
+    float: left;
+}
+
+#articles article {
+    width: 25%;
+    height: 150px;
+    line-height: 150px;
+    color: #fafafa;
+    background-color: #333333;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    float: left;
+    margin: 15px;
+}
+
+/*Responsive */
+
+/*desde la anchura 0 hasta 888px de pantalla*/
+@media (max-width: 888px) {
+    #articles article {
+        width: 40%;
+        background-color: #a5bdfd;
+    }
+}
+
+@media (max-width: 632px) {
+    aside {
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 91%;
+        padding: 19px;
+    }
+
+    #articles {
+        width: 100%;
+    }
+
+    #articles article {
+        width: 90%;
+        background-color: #241066;
+    }
+}
