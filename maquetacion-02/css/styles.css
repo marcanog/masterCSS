@@ -35,7 +35,7 @@ body {
 }
 
 .wrap {
-    width: 1200px;
+    width: 1205px;
     margin: 0 auto;
 }
 
@@ -79,7 +79,7 @@ body {
     margin-left: 25px;
 }
 
-.gear {
+.gear, .icon {
     font-family: "WebSymbolsRegular", sans-serif;
 }
 
@@ -106,4 +106,129 @@ body {
 #menu ul li a:hover {
     color: #37bcf9;
     transform: scale(1.2, 1.2);
+}
+
+/* Banner */
+#banner {
+    width: 100%;
+    height: 100px;
+    border: 10px solid #FFFFFF;
+    box-shadow: 0 0 2px #808080;
+    background-image: url("../img/bakbaner.png");
+    background-position: -200px -200px;
+    margin: 20px auto;
+}
+
+#banner h1 {
+    display: block;
+    width: 850px;
+    font-family: BebasNeue, sans-serif;
+    color: #FFFFFF;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin: 27px auto;
+    text-shadow: 0 0 2px #808080;
+}
+
+/* Tarjetas - cards */
+.card {
+    float: left;
+    overflow: hidden;
+    width: 205px;
+    height: 305px;
+    box-shadow: 1px 1px 2px #e2e2e2;
+    margin: 40px 17px 20px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #c1c1c1;
+}
+
+.card .icon {
+    display: block;
+    width: 100%;
+    height: 115px;
+    font-size: 50px;
+    line-height: 135px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card .category {
+    width: 100%;
+    height: 50px;
+    font-family: TrebuchetMS, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: #1D538C;
+    /*text-shadow: 1px 1px 2px #1D538C;*/
+}
+
+.card .description {
+    text-align: center;
+    color: #2164a6;
+    font-family: TrebuchetMS, sans-serif;
+    font-size: 15px;
+}
+
+/*barra lateral */
+#lateral {
+    width: 300px;
+    min-height: 1200px;
+    font-family: TrebuchetMS, sans-serif;
+    float: right;
+    margin: 30px;
+}
+
+aside h3 {
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 50px;
+    background-image: url("../img/pxgray.png");
+    box-shadow: 0 1px 0 #393d3f, 1px 2px 0 #393d3f, 2px 3px 0 #393d3f, 3px 4px 0 #393d3f;
+    font-size: 30px;
+    font-family: BebasNeue, sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin: 30px auto 15px;
+}
+
+#search {
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 1px 1px 4px #CCCCCC inset;
+    border-radius: 5px;
+}
+
+#lateral input[type="text"] {
+    width: 90%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #CCCCCC;
+    transition: all 300ms;
+}
+
+#lateral input[type="text"]:focus {
+    color: #555555;
+}
+
+#lateral input[type="button"],
+#lateral input[type="submit"] {
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #CCCCCC;
+    color: #555555;
+    padding-left: 2px;
 }
